@@ -8,7 +8,7 @@ from sqlalchemy.orm import sessionmaker
 load_dotenv()
 
 # URL de conexión a la base de datos desde las variables de entorno
-SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL")
+SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL").replace("mysql://", "mysql+pymysql://")
 
 # Crear el motor de la base de datos
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
