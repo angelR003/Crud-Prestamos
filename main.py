@@ -17,12 +17,14 @@ app = FastAPI(
 # Configuración de CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Permite peticiones desde Vue
+    allow_origins=[
+        "http://localhost:5173",  # Para pruebas locales
+        "https://front-prestamos-production.up.railway.app"  # URL del frontend en producción
+    ],
     allow_credentials=True,
-    allow_methods=["*"],  # Permite todos los métodos (GET, POST, PUT, DELETE, etc.)
-    allow_headers=["*"],  # Permite todos los encabezados
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
-
 # Crear las tablas en la base de datos (si no existen)
 Base.metadata.create_all(bind=engine)
 
