@@ -76,8 +76,7 @@ Sigue estos pasos para configurar el proyecto en tu entorno local:
 
 1. **Clona este repositorio**:
    ```bash
-   git clone https://github.com/AlejandroRomero17/CRUD-PRESTAMOS-FASTAPI
-   cd CRUD-PY-MYSQL
+   git clone 
    ```
 
 2. **Crea un entorno virtual**:
@@ -104,7 +103,7 @@ Sigue estos pasos para configurar el proyecto en tu entorno local:
 
 6. **Inicia la aplicación**:
    ```bash
-   uvicorn main:app --reload
+   
    ```
 
 La API estará disponible en `http://127.0.0.1:8000`.
@@ -122,13 +121,13 @@ La API estará disponible en `http://127.0.0.1:8000`.
 
 ```json
 {
-    "nombre": "Juan",
+    "nombre": "pepe",
     "primer_apellido": "Pérez",
     "segundo_apellido": "García",
     "tipo_usuario": "Alumno",
     "nombre_usuario": "juanperez123",
     "correo_electronico": "juan.perez@example.com",
-    "contrasena": "contraseña_segura_123",
+    "contrasena": "1234",
     "numero_telefono": "555-1234",
     "estatus": "Activo"
 }
@@ -185,11 +184,6 @@ Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICE
 
 ## Contacto
 
-Si tienes preguntas o sugerencias, no dudes en contactarme:
-
-- **Nombre**: Alejandro Gonzalez Romero
-- **Correo electrónico**: gonzalez.romero.alejandroo@gmail.com
-- **GitHub**: (https://github.com/AlejandroRomero17)
 
 ---
 # CRUD-PRESTAMOS-FASTAPI
